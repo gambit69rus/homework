@@ -8,7 +8,17 @@ int number2 = int.Parse(Console.ReadLine()!);
 int max = number1;
 if (number1 > number2)
 {
-    Console.Write(max = number1);
+    Console.WriteLine(number1 + " > " + number2);
+}
+else if (number2 > number1)
+{
+    Console.WriteLine(number2 + " > " + number1);
 }
 else
-    Console.Write(max = number2);
+
+{
+    Console.WriteLine(number2 + " = " + number1);
+}
+
+
+
