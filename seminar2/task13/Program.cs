@@ -9,7 +9,7 @@ int number = int.Parse(Console.ReadLine()!);
 string str = number.ToString();
 if (number > 100)
 {
-    Console.WriteLine(str[2]);
+    Console.WriteLine($"{number} -> {str[2]}");
 }
 else
 {
