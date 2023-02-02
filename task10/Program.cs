@@ -5,6 +5,13 @@
 
 Console.Clear();
 Console.Write("Введите трехзначное число: ");
-int number = int.Parse(Console.ReadLine());
+int number = int.Parse(Console.ReadLine()!);
 int result = ((number / 10) % 10);
-Console.WriteLine($"{number} -> {result}");
+if ((number > 100) && (number < 1000))
+{
+    Console.WriteLine($"{number} -> {result}");
+}
+else
+{
+    Console.WriteLine("вы ввели не трехзначное число");
+}
