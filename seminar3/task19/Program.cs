@@ -5,12 +5,13 @@
 // 23432 -> да
 
 Console.Clear();
-Console.WriteLine("Введите число: ");
-string number = Console.ReadLine();
-int len = number.Length;
+Console.Write("Введите число: ");
+int number = int.Parse(Console.ReadLine()!);
+string str = number.ToString();
+int len = str.Length;
 if (len == 5)
 {
-    if (number[0] == number[4] && number[1] == number[3])
+    if (str[0] == str[4] && str[1] == str[3])
     {
         Console.WriteLine($"{number} -> да");
     }

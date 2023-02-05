@@ -21,8 +21,3 @@ int B = y2 - y1;
 int C = z1 - z2;
 double length = Math.Round(Math.Sqrt((A * A) + (B * B) + (C * C)), 2);
 Console.WriteLine($"Длинна отрезка {length}");
-int ReadInt(string message)
-{
-    Console.Write(message);
-    return Convert.ToInt32(Console.ReadLine());
-}
