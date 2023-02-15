@@ -19,7 +19,7 @@ void PrintArray(int[] someArray)
     Console.Write("[");
     for (int i = 0; i < someArray.Length - 1; i++)
     {
-        Console.Write($"{someArray[i]}, ");
+        Console.Write($"{someArray[i]} ");
     }
     Console.WriteLine($"{someArray[someArray.Length - 1]}]");
 }
