@@ -15,22 +15,22 @@ FillArrayRandomNumbers(numbers);
 PrintArray(numbers);
 void FillArrayRandomNumbers(double[,] array)
 {
-    for (int m = 0; m < array.GetLength(0); m++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for (int n = 0; n < array.GetLength(1); n++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[m, n] = Convert.ToDouble(new Random().Next(-100, 100)) / 10;
+            array[i, j] = Convert.ToDouble(new Random().Next(-100, 100)) / 10;
         }
     }
 }
 void PrintArray(double[,] array)
 {
-    for (int m = 0; m < array.GetLength(0); m++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
         Console.Write("[ ");
-        for (int n = 0; n < array.GetLength(1); n++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write(array[m, n] + " ");
+            Console.Write(array[i, j] + " ");
         }
         Console.Write("]");
         Console.WriteLine("");
