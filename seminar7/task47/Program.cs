@@ -6,30 +6,30 @@
 // 8 7,8 -7,1 9
 
 Console.WriteLine("введите количество строк");
-int linesVol = Convert.ToInt32(Console.ReadLine());
+int m = int.Parse(Console.ReadLine()!);
 Console.WriteLine("введите количество столбцов");
-int columnsVol = Convert.ToInt32(Console.ReadLine());
-double[,] numbers = new double[linesVol, columnsVol];
+int n = int.Parse(Console.ReadLine()!);
+double[,] numbers = new double[m, n];
 FillArrayRandomNumbers(numbers);
 PrintArray(numbers);
 void FillArrayRandomNumbers(double[,] array)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int m = 0; m < array.GetLength(0); m++)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (int n = 0; n < array.GetLength(1); n++)
         {
-            array[i, j] = Convert.ToDouble(new Random().Next(-100, 100)) / 10;
+            array[m, n] = Convert.ToDouble(new Random().Next(-100, 100)) / 10;
         }
     }
 }
 void PrintArray(double[,] array)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int m = 0; m < array.GetLength(0); m++)
     {
         Console.Write("[ ");
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (int n = 0; n < array.GetLength(1); n++)
         {
-            Console.Write(array[i, j] + " ");
+            Console.Write(array[m, n] + " ");
         }
         Console.Write("]");
         Console.WriteLine("");

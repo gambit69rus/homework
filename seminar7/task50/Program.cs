@@ -7,12 +7,11 @@
 // [1,7] -> по такому индексу нет элемента.
 
 Console.WriteLine("введите номер строки");
-int n = Convert.ToInt32(Console.ReadLine());
+int n = int.Parse(Console.ReadLine()!);
 Console.WriteLine("введите номер столбца");
-int m = Convert.ToInt32(Console.ReadLine());
+int m = int.Parse(Console.ReadLine()!);
 int[,] numbers = new int[10, 10];
 FillArrayRandomNumbers(numbers);
-
 if (n > numbers.GetLength(0) || m > numbers.GetLength(1))
 {
     Console.WriteLine("такого элемента нет");
@@ -21,9 +20,7 @@ else
 {
     Console.WriteLine($"значение элемента {n} строки и {m} столбца равно {numbers[n - 1, m - 1]}");
 }
-
 PrintArray(numbers);
-
 void FillArrayRandomNumbers(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
@@ -34,7 +31,6 @@ void FillArrayRandomNumbers(int[,] array)
         }
     }
 }
-
 void PrintArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)

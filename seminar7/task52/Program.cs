@@ -7,9 +7,9 @@
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
 Console.WriteLine("введите количество строк");
-int n = Convert.ToInt32(Console.ReadLine());
+int n = int.Parse(Console.ReadLine()!);
 Console.WriteLine("введите количество столбцов");
-int m = Convert.ToInt32(Console.ReadLine());
+int m = int.Parse(Console.ReadLine()!);
 int[,] numbers = new int[n, m];
 FillArrayRandomNumbers(numbers);
 for (int j = 0; j < numbers.GetLength(1); j++)
