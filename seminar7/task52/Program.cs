@@ -6,11 +6,12 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
+Console.Clear();
 Console.WriteLine("введите количество строк");
-int n = int.Parse(Console.ReadLine()!);
+int rows = int.Parse(Console.ReadLine()!);
 Console.WriteLine("введите количество столбцов");
-int m = int.Parse(Console.ReadLine()!);
-int[,] numbers = new int[n, m];
+int columns = int.Parse(Console.ReadLine()!);
+int[,] numbers = new int[rows, columns];
 FillArrayRandomNumbers(numbers);
 for (int j = 0; j < numbers.GetLength(1); j++)
 {
@@ -19,7 +20,7 @@ for (int j = 0; j < numbers.GetLength(1); j++)
     {
         avarage = (avarage + numbers[i, j]);
     }
-    avarage = avarage / n;
+    avarage = avarage / rows;
     Console.Write(avarage + "; ");
 }
 Console.WriteLine();

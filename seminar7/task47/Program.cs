@@ -5,11 +5,12 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
+Console.Clear();
 Console.WriteLine("введите количество строк");
-int m = int.Parse(Console.ReadLine()!);
+int rows = int.Parse(Console.ReadLine()!);
 Console.WriteLine("введите количество столбцов");
-int n = int.Parse(Console.ReadLine()!);
-double[,] numbers = new double[m, n];
+int columns = int.Parse(Console.ReadLine()!);
+double[,] numbers = new double[rows, columns];
 FillArrayRandomNumbers(numbers);
 PrintArray(numbers);
 void FillArrayRandomNumbers(double[,] array)

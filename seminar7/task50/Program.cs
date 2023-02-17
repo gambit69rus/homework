@@ -6,6 +6,7 @@
 // 8 4 2 4
 // [1,7] -> по такому индексу нет элемента.
 
+Console.Clear();
 Console.WriteLine("введите номер строки");
 int n = int.Parse(Console.ReadLine()!);
 Console.WriteLine("введите номер столбца");
